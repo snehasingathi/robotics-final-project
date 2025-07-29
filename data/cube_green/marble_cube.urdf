@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="green_marble_cube">
+
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1.0"/> <!-- Adjust based on the actual mass -->
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/> <!-- Adjust based on size and mass -->
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="marble_cube.obj" scale="0.25 0.25 0.5"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="marble_cube.obj" scale="0.25 0.25 0.5"/>
+      </geometry>
+    </collision>
+  </link>
+
+</robot>
